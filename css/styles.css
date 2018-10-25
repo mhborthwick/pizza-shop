@@ -12,9 +12,43 @@ label{
 }
 
 .vh{
-  min-height: 25vh;
+  min-height: 100vh;
 }
 
 #sizePizza{
   width: 25%;
+}
+
+.center{
+  text-align: center;
+}
+
+/* button{
+  margin: 0 auto;
+} */
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+/* .form-group{
+  width: 70%;
+} */
+
+.width{
+  50%;
+}
+
+.bg {
+  background: linear-gradient(90deg, green 50%, #FFFFF4 50%);
+}
+
+.mgn{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.pdg{
+  padding-left: 50px;
 }

@@ -10,31 +10,73 @@
   </head>
   <body>
 
-    <div class="container">
-      <h1>Welcome to Mike's Pizza Store</h1>
-    </div>
+    <!-- <div class="container">
+      <h1 class="center">Welcome to Mike's Pizza Store</h1>
+    </div> -->
 <!-- beginning of form -->
     <form id="selectOrder">
-      <!-- <div class="container vh">
+      <div class="container vh flex bg mgn">
 
-        <div class="form-group">
-          <h2>Toppings:</h2>
-            <input type="checkbox" name="toppingOption" value="3"><label for="toppingOption">Cheese</label>
+        <div class="container width center">
+          <h2>Step1.)<i> Pick your Toppings:</i></h2>
+        </div>
+
+        <div class="container width">
+
+          <div class="form-group pdg">
+
+                <input type="checkbox" name="toppingOption" value="veganCheese"><label for="toppingOption">Vegan Cheese</label>
+
+              <br>
+
+                <input type="checkbox" name="toppingOption" value="veganSausage"><label for="toppingOption">Vegan Sausage</label>
+
+              <br>
+
+                <input type="checkbox" name="toppingOption" value="mushroom"><label for="toppingOption">Mushrooms</label>
+
+              <br>
+
+                <input type="checkbox" name="toppingOption" value="eggplant"><label for="toppingOption">Eggplant</label>
+
+              <br>
+
+                <input type="checkbox" name="toppingOption" value="spinach"><label for="toppingOption">Spinach</label>
+
+              <br>
+
+                <input type="checkbox" name="toppingOption" value="artichoke"><label for="toppingOption">Artichokes</label>
+
+              <br>
+
+                <input type="checkbox" name="toppingOption" value="onion"><label for="toppingOption">Onions</label>
+
+              <br>
+
+                <input type="checkbox" name="toppingOption" value="slicedTomato"><label for="toppingOption">Sliced Tomatoes</label>
+
+              <br>
+
+          </div>
+
         </div>
 
       </div>
+
       <div class="container vh">
-        <h2>Size:</h2>
+        <p>Step2.)<i> Pick the size:</i></p>
         <select class="form-control" id="sizePizza">
-          <option value="1">Large</option>
-          <option value="2">Medium</option>
-          <option value="3">Small</option>
+          <option value="1">Large 14”</option>
+          <option value="2">Medium 12”</option>
+          <option value="3">Small 10”</option>
         </select>
-      </div> -->
+      </div>
+
+      <div class="container">
 
 
         <button type="submit" class="btn btn-default">Order</button>
-
+      </div>
 
     </form>
 
