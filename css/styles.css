@@ -2,6 +2,10 @@ label{
   padding-left: 10px;
 }
 
+#result{
+  display: none;
+}
+
 .bdr{
   border-top: 2px solid black;
 }
@@ -13,6 +17,14 @@ label{
 
 .vh{
   min-height: 100vh;
+}
+
+.vh2{
+  height: 90vh;
+}
+
+.vh3{
+  height: 10vh;
 }
 
 .width3{
