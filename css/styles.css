@@ -16,12 +16,16 @@ label{
 }
 
 #sizePizza{
-  width: 25%;
+  width: 10%;
 }
 
 .center{
   text-align: center;
 }
+
+/* .container{
+  width: 100%;
+} */
 
 /* button{
   margin: 0 auto;
@@ -37,16 +41,28 @@ label{
 } */
 
 .width{
-  50%;
+  width: 50%;
+}
+
+.width2{
+  width: 100%;
 }
 
 .bg {
-  background: linear-gradient(90deg, green 50%, #FFFFF4 50%);
+  background: linear-gradient(90deg, #BEAF8B 50%, #FFFFF4 50%);
 }
 
-.mgn{
+.bg2{
+  background: #FFFFF4;
+}
+
+/* .mgn{
   margin-left: 0;
   margin-right: 0;
+} */
+
+.mgn2{
+  margin: auto;
 }
 
 .pdg{

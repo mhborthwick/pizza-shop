@@ -10,12 +10,10 @@
   </head>
   <body>
 
-    <!-- <div class="container">
-      <h1 class="center">Welcome to Mike's Pizza Store</h1>
-    </div> -->
-<!-- beginning of form -->
+  <!-- beginning of form -->
     <form id="selectOrder">
-      <div class="container vh flex bg mgn">
+      <!-- toppings -->
+      <div class="container vh flex bg mgn width2">
 
         <div class="container width center">
           <h2>Step1.)<i> Pick your Toppings:</i></h2>
@@ -62,26 +60,27 @@
         </div>
 
       </div>
+      <!-- end of toppings -->
+      <!-- size -->
+      <div class="container vh flex bg2 width2">
+        <div class="container width2">
 
-      <div class="container vh">
-        <p>Step2.)<i> Pick the size:</i></p>
-        <select class="form-control" id="sizePizza">
-          <option value="1">Large 14”</option>
-          <option value="2">Medium 12”</option>
-          <option value="3">Small 10”</option>
-        </select>
+            <h2 class ="center">Step2.)<i> Pick the size:</i></h2>
+            <select class="form-control mgn2" id="sizePizza">
+              <option value="1">Large 14”</option>
+              <option value="2">Medium 12”</option>
+              <option value="3">Small 10”</option>
+            </select>
+        </div>
       </div>
-
-      <div class="container">
-
-
+      <!-- end of size -->
+      <div class="container vh flex">
         <button type="submit" class="btn btn-default">Order</button>
       </div>
 
     </form>
+  <!-- end of form -->
 
-
-<!-- end of form -->
 <!-- beginning of order amount -->
     <div class="container bdr">
       <p class="align">The total for your order is:<span id="orderAmount"></span></p>
