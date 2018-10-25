@@ -15,7 +15,7 @@
     </div>
 <!-- beginning of form -->
     <form id="selectOrder">
-      <div class="container">
+      <!-- <div class="container vh">
 
         <div class="form-group">
           <h2>Toppings:</h2>
@@ -23,20 +23,28 @@
         </div>
 
       </div>
-      <div class="container">
+      <div class="container vh">
         <h2>Size:</h2>
-          <input type="checkbox" name="sizeOption" value="20"/><label for="sizeOption">Large</label>
-          <br>
-          <input type="checkbox" name="sizeOption" value="15"/><label for="sizeOption">Medium</label>
-          <br>
-          <input type="checkbox" name="sizeOption" value="10"/><label for="sizeOption">Small</label>
-      </div>
+        <select class="form-control" id="sizePizza">
+          <option value="1">Large</option>
+          <option value="2">Medium</option>
+          <option value="3">Small</option>
+        </select>
+      </div> -->
+
+
+        <button type="submit" class="btn btn-default">Order</button>
+
+
     </form>
+
+
 <!-- end of form -->
 <!-- beginning of order amount -->
-    <div class="container">
-      <p>The total for your order is:<span id="orderAmount"></span></p>
+    <div class="container bdr">
+      <p class="align">The total for your order is:<span id="orderAmount"></span></p>
     </div>
 <!-- end of order amount -->
+
   </body>
 </html>

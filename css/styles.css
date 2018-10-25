@@ -1,0 +1,20 @@
+label{
+  padding-left: 10px;
+}
+
+.bdr{
+  border-top: 2px solid black;
+}
+
+.align{
+  text-align: right;
+  margin-right: 100px;
+}
+
+.vh{
+  min-height: 25vh;
+}
+
+#sizePizza{
+  width: 25%;
+}
