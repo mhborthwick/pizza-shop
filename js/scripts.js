@@ -1,5 +1,5 @@
 // biz logic
-
+var customerName;
 var toppingOptions;
 var toppingOptions2;
 var pizzaSizeOption;
@@ -8,11 +8,12 @@ var arr2 = [];
 // get array of topping items + convert into numerical value;
 
 function Pizza (){
-  this.regularToppings = arr;
-  this.gourmetToppings = arr2;
+  this.name = "";
   this.toppingTotal = 0;
   this.size = 0;
   this.currentTotal = 0;
+  this.regularToppings = arr;
+  this.gourmetToppings = arr2;
   // this.OverallTotal = 0;
 }
 
@@ -28,6 +29,10 @@ Pizza.prototype.sizeSelect = function(){
 
 Pizza.prototype.addCurrentAmount = function() {
   return this.currentTotal = this.toppingTotal + this.size;
+}
+
+Pizza.prototype.addName = function (){
+  return this.name = customerName;
 }
 
 
@@ -47,14 +52,18 @@ $(document).ready(function(){
     });
 
     pizzaSizeOption = $("#sizePizza").val();
+    customerName = $("#custName").val()
 
     customer.countarrLength();
     customer.sizeSelect();
     customer.addCurrentAmount();
+    customer.addName();
 
     console.log(customer);
+    // console.log(customerName);
     // console.log(pizzaSizeOption);
 
+    $("#orderAmount").text(" " + "$" + customer.currentTotal);
 
   });
 });
