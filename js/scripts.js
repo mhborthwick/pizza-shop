@@ -19,7 +19,7 @@ function resetFields(){
     arr2.length = 0;
 }
 
-var customer = new Pizza("Mike");
+var customer = new Pizza(prompt("What is your name?"));
 
 Pizza.prototype.countarrLength = function(){
   return this.toppingTotal = arr.length * 1 + arr2.length * 3;
