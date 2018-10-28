@@ -67,6 +67,5 @@ $(document).ready(function(){
     $("#result").css("display", "block");
 
     console.log(customer);
-
   });
 });
