@@ -8,91 +8,54 @@
     <script src="js/scripts.js" charset="utf-8"></script>
     <title>Mike's Pizza Store</title>
   </head>
-  <body>
 
+  <body>
   <!-- beginning of form -->
     <form id="selectOrder">
-
       <div class="container vh2 flex bg2 width2">
         <div class="mgn2">
           <h1>Welcome to Mike's Pizza Shop</h1>
         </div>
       </div>
-
       <div class="container vh3 flex bg2 width2">
         <p class = "mgn2">⇣</p>
       </div>
 
-      <!-- <div class="container vh3 flex">
-        <div class="mgn2">
-        <label for="name">Name: </label>
-        <input id="custName" type="text">
-        </div>
-      </div> -->
-
-      <!-- toppings -->
+  <!-- topping select boxes -->
       <div class="container vh flex bg mgn width2">
-
         <div class="container width center">
           <h2>Step1.)<i> Pick your Toppings:</i></h2>
         </div>
 
         <div class="container width">
-
           <div class="form-group pdg">
-
             <h3>Gourmet Toppings ($3 each):</h3>
+              <input type="checkbox" name="toppingOption2" value="veganSausage"><label for="toppingOption2">Vegan Sausage</label><br>
 
-            <input type="checkbox" name="toppingOption2" value="veganSausage"><label for="toppingOption2">Vegan Sausage</label>
+              <input type="checkbox" name="toppingOption2" value="mushroom"><label for="toppingOption2">Mushrooms</label><br>
 
-          <br>
+              <input type="checkbox" name="toppingOption2" value="eggplant"><label for="toppingOption2">Eggplant</label><br>
 
-          <input type="checkbox" name="toppingOption2" value="mushroom"><label for="toppingOption2">Mushrooms</label>
-
-          <br>
-
-
-          <input type="checkbox" name="toppingOption2" value="eggplant"><label for="toppingOption2">Eggplant</label>
-
-          <br>
-
-          <input type="checkbox" name="toppingOption2" value="artichoke"><label for="toppingOption2">Artichokes</label>
-
-        <br>
-
+              <input type="checkbox" name="toppingOption2" value="artichoke"><label for="toppingOption2">Artichokes</label><br>
 
             <h3>Regular Toppings ($1 each):</h3>
+              <input type="checkbox" name="toppingOption" value="veganCheese"><label for="toppingOption">Vegan Cheese</label><br>
 
-                <input type="checkbox" name="toppingOption" value="veganCheese"><label for="toppingOption">Vegan Cheese</label>
+              <input type="checkbox" name="toppingOption" value="spinach"><label for="toppingOption">Spinach</label><br>
 
-              <br>
+              <input type="checkbox" name="toppingOption" value="onion"><label for="toppingOption">Onions</label><br>
 
-
-                <input type="checkbox" name="toppingOption" value="spinach"><label for="toppingOption">Spinach</label>
-
-              <br>
-
-
-
-                <input type="checkbox" name="toppingOption" value="onion"><label for="toppingOption">Onions</label>
-
-              <br>
-
-                <input type="checkbox" name="toppingOption" value="slicedTomato"><label for="toppingOption">Sliced Tomatoes</label>
-
-              <br>
-
+              <input type="checkbox" name="toppingOption" value="slicedTomato"><label for="toppingOption">Sliced Tomatoes</label><br>
           </div>
 
         </div>
-
       </div>
-      <!-- end of toppings -->
-      <!-- size -->
+      <!-- end of topping select boxes -->
+
+      <!-- size select dropdown-->
       <div class="container vh flex bg2 width2">
         <div class="container">
-
-            <h2 class ="center">Step2.)<i> Pick the size:</i></h2>
+          <h2 class ="center">Step2.)<i> Pick the size:</i></h2>
             <select class="form-control mgn2 width3" id="sizePizza">
               <option value="20">Large 14”</option>
               <option value="15">Medium 12”</option>
@@ -100,43 +63,31 @@
             </select>
         </div>
       </div>
-      <!-- end of size -->
-      <!-- beginning of order -->
+      <!-- end of size select dropdown -->
+
+      <!-- beginning of order area -->
       <div class="container vh flex bg width2">
-
-
-      <div class="container width">
-
-        <div class="container flex width2">
+        <div class="container width">
+          <div class="container flex width2 pdg2">
             <h2 class ="mgn2">Step3.)<i> Place your order:</i></h2>
-        </div>
-
-        <br>
-        <br>
-
-
-
+          </div>
           <div class="container flex width2">
             <div class="mgn2">
               <button type="submit" class="btn">Order</button>
             </div>
-
           </div>
-
-      </div>
-      <!-- end of order -->
+        </div>
+      <!-- end of order area -->
     </form>
   <!-- end of form -->
 
 <!-- beginning of order amount -->
-      <div class="container width pdg">
-        <div id="result">
-          <p>Hey,<span id ="customerName"></span>! The total for your order is:<span id="orderAmount"></span></p>
+        <div class="container width pdg">
+          <div id="result">
+            <p>Hey,<span id ="customerName"></span>! The total for your order is:<span id="orderAmount"></span></p>
+          </div>
         </div>
       </div>
-
-    </div>
 <!-- end of order amount -->
-
   </body>
 </html>
