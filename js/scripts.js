@@ -1,11 +1,9 @@
 // biz logic
-// var customerName;
 var toppingOptions;
 var toppingOptions2;
 var pizzaSizeOption;
 var arr = [];
 var arr2 = [];
-// get array of topping items + convert into numerical value;
 
 function Pizza (name){
   this.name = name;
@@ -14,7 +12,11 @@ function Pizza (name){
   this.currentTotal = 0;
   this.regularToppings = arr;
   this.gourmetToppings = arr2;
-  // this.OverallTotal = 0;
+}
+
+function resetFields(){
+    arr.length = 0;
+    arr2.length = 0;
 }
 
 var customer = new Pizza("Mike");
@@ -31,23 +33,15 @@ Pizza.prototype.addCurrentAmount = function() {
   return this.currentTotal = this.toppingTotal + this.size;
 }
 
-// Pizza.prototype.addName = function (){
-//   return this.name = customerName;
-// }
-
-function resetFields(){
-    arr.length = 0;
-    arr2.length = 0;
-}
-
 // user logic
 $(document).ready(function(){
-
   $("#selectOrder").submit(function(event) {
     event.preventDefault();
 
+    // Reset the topping total
     resetFields();
 
+    // Collect topping selections and push to arrays
     $("input:checkbox[name=toppingOption]:checked").each(function(){
       toppingOptions = $(this).val();
       arr.push(toppingOptions);
@@ -58,25 +52,21 @@ $(document).ready(function(){
       arr2.push(toppingOptions2);
     });
 
-
+    // Get value of the pizza size selection
     pizzaSizeOption = $("#sizePizza").val();
-    // customerName = $("#custName").val()
 
+    // Calculations
     customer.countarrLength();
     customer.sizeSelect();
     customer.addCurrentAmount();
-    // customer.addName();
 
-    console.log(customer);
-    // console.log(customerName);
-    // console.log(pizzaSizeOption);
-
+    // Show results
     $("#customerName").text(" " + customer.name);
     $("#orderAmount").text(" " + "$" + customer.currentTotal);
 
     $("#result").css("display", "block");
 
-
+    console.log(customer);
 
   });
 });
